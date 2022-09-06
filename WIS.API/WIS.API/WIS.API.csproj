@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FastMapper" Version="1.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WIS.BLL.Services.Interfaces\WIS.BLL.Services.Interfaces.csproj" />
+    <ProjectReference Include="..\WIS.BLL.Services\WIS.BLL.Services.csproj" />
+    <ProjectReference Include="..\WIS.Data.DataAccess.Interfaces\WIS.Data.DataAccess.Interfaces.csproj" />
+    <ProjectReference Include="..\WIS.Data.DataAccess\WIS.Data.DataAccess.csproj" />
+    <ProjectReference Include="..\WIS.DataAccess.DataContext\WIS.DataAccess.DataContext.csproj" />
+  </ItemGroup>
+
+</Project>

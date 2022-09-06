@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FastMapper" Version="1.2.0" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.22.1" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.22.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WIS.BLL.Services.Interfaces\WIS.BLL.Services.Interfaces.csproj" />
+    <ProjectReference Include="..\WIS.BLL.Services.Models\WIS.BLL.Services.Models.csproj" />
+    <ProjectReference Include="..\WIS.Data.DataAccess.Interfaces\WIS.Data.DataAccess.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>
